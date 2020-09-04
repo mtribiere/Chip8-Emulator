@@ -2,13 +2,13 @@
 A simple chip8 emulator for entertainement and learning purposes writen in c++ using the SDL2 library.
 Some rom have been included to play around with the emulator.
 
-# Compile from source
+# # Compile from source
 ```
-$> make
+user@debian:~$ make
 ```
 
-# Play 
+# # Play 
+```console
+user@debian:~$ ./chip8 <path_to_rom>
 ```
-$> ./chip8 <path_to_rom>
-```
-Crafted with <3 by mtribiere
+Crafted with :heart: by mtribiere
