@@ -1,5 +1,5 @@
 # Chip8-Emulator
-A simple chip8 emulator for entertainement and learning purposes writen in c++ using the SDL2 library.
+A simple chip8 emulator for entertainement and learning purposes written in C++ using the SDL2 library.
 Some roms have been included to play around with the emulator.
 
 # # Showcase
