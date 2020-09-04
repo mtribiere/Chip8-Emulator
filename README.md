@@ -3,7 +3,7 @@ A simple chip8 emulator for entertainement and learning purposes writen in c++ u
 Some rom have been included to play around with the emulator.
 
 # # Compile from source
-```
+```console
 user@debian:~$ make
 ```
 
