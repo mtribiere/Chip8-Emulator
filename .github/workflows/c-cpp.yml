@@ -7,15 +7,24 @@ on:
     branches: [ "master" ]
 
 jobs:
-  build:
-
+  Build-Makefile:
     runs-on: ubuntu-latest
-    
     steps:
     - uses: actions/checkout@v3
     - name: Install deps 
       run:  sudo apt-get install libsdl2-2.0-0 libsdl2-dev cmake
     - name: setup 
       run: mkdir build && cd build && cmake ..
-    - name: make
+    - name: build
       run: cd build && make
+    
+  Build-Ninja:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Install deps 
+      run:  sudo apt-get install libsdl2-2.0-0 libsdl2-dev cmake ninja
+    - name: setup 
+      run: mkdir build && cd build && cmake -G Ninja ..
+    - name: build
+      run: cd build && ninja
