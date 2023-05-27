@@ -9,12 +9,25 @@ Some roms have been included to play around with the emulator.
 
 
 # # Compile from source
+### MakeFile build
 ```console
+user@debian:~$ mkdir build && cd build
+user@debian:~$ cmake .. 
 user@debian:~$ make
+```
+### Ninja build
+```console
+user@debian:~$ mkdir build && cd build
+user@debian:~$ cmake -G Ninja .. 
+user@debian:~$ ninja
 ```
 
 # # Play 
 ```console
-user@debian:~$ ./chip8 <path_to_rom>
+user@debian:~$ make run
+```
+[OR]
+```console
+user@debian:~$ ninja run
 ```
 Crafted with :heart: by mtribiere
