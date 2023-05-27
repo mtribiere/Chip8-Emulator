@@ -19,7 +19,7 @@ void CPU::RunNextInstruction(RAM *ram,Screen *screen){
 
     //Recuperer l'instruction
     int operation = (ram->getMemoryAddress(PCRegister)<<8) + ram->getMemoryAddress(PCRegister+1);
-    std::cout << "Operation : " << std::hex << operation << std::endl;
+    //std::cout << "Operation : " << std::hex << operation << std::endl;
 
     //Flag pour le changerment manuel du PC
     bool notCountPCFlag = false;
